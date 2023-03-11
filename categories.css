@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Merriweather');
+
+/* $big: 'Merriweather', serif; */
+
+/* $light: #CECDCA; */
+
+/* New */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* navbar section begins */
+body{
+  background-color: hsl(36, 100%, 99%);
+  max-width: 844.532;
+}
+
+li, a, button{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px 13%;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.logo{
+  cursor: pointer;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: hsl(5, 85%, 63%);
+}
+
+/* navbar section ends */
+/* New Ends */
+body {
+  font-family: 'Inconsolata', monospace;
+  ;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2px;
+    padding: 30px 13%;
+    padding-top: 0;
+}
+
+.project {
+  position: relative;
+  background-color:hsl(233, 8%, 79%);
+  overflow: hidden;
+}
+
+img {
+  /* position: absolute; */
+  opacity: 0.9;
+}
+
+p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+
+/* project hover overlay */
+.project:hover .grid__overlay {
+  transform: translateY(0%);
+}
+
+.grid__overlay {
+  /* background: rgba(darken #F2DAD7, 10%, .9); */
+  height: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  transform: translateY(101%);
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  background: hsl(5, 85%, 63%);
+  outline: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+button:hover {
+  transition: all 0.3s ease-in-out;
+  background: white;
+  background-color: hsl(240, 100%, 5%);
+  transform: scale(1.05);
+}
+
+/* project popup overlay */
+
+.project__image {
+  margin-left: -50%;
+}

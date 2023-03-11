@@ -1,65 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="categories.css">
 </head>
 <body>
-    <div class="container">
-        <!-- navbar secton begins -->
-        <header>
-          <img src="/assets/images/logo.svg" alt="logo" class="logo">
-          <nav>
-            <ul class="nav_links">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="#">New</a></li>
-              <li><a href="#">Popular</a></li>
-              <li><a href="#">Trending</a></li>
-              <li><a href="categories.html" class="cat">Categories</a></li>
-            </ul>
-          </nav>
-        </header>
-        <!-- navbar section ends -->
-    
-        <!-- hero section begins -->
-        <section>
-          <div class="row">
-            <div class="col1">
-                <div class="hero_title">
-                    <h1>We made finding what you want very easy</h1>
-                </div>
-            </div>
-    
-            <aside class="col2">
-              <div>
-                <h1 id="new">New</h1>
-                <h4 class="aside_title">Hydrogen VS Electric Cars</h4>
-                <p class="aside_text">Will hydrogen-fueled cars ever catch up to EVs?</p>
-                <hr>
-              </div>
+  <div class="container">
 
-              <div class="img">
-                <a target="_blank" href="fjords.jpg">
-                  <img src="fjords.jpg" alt="Fjords" width="300" height="200">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-              </div> 
-    
-              <div>
-                <h4 class="aside_title">The Downsides of AI Artistry</h4>
-                <p class="aside_text">What are the possible adverse effects of on-demand AI image generation?</p>
-                <hr>
-              </div>
-    
-              <div>
-                <h4 class="aside_title">Is VC Funding Drying Up?</h4>
-                <p class="aside_text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-              </div>
-            </aside>
-          </div>
-        </section>
-        <!-- hero section ends --></body>
+    <header>
+      <img src="/assets/images/logo.svg" alt="logo" class="logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="categories.html" class="cat">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="portfolio">
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1519211975560-4ca611f5a72a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ae34625b8db390fb2b784800d76d225&auto=format&fit=crop&w=700&q=80" />
+        <p>Web 3</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1521104955835-ba91c70d6443?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38cdeda7d073c4b6d47a5776f184cba9&auto=format&fit=crop&w=700&q=80" />
+        <p>Crypto</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=700&q=80" />
+        <p>Programming</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd4d735954f33290fbf984e4eb7abe32&auto=format&fit=crop&w=700&q=80" />
+        <p>Defi</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c5008952226f48ed4bf5d3ea64ff545&auto=format&fit=crop&w=700&q=80" />
+        <p>Javascript</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-0.3.5&s=a4b3dc4bee43da458f6aa5c05be6bfc4&auto=format&fit=crop&w=700&q=80" />
+        <p>NFTs</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1481762554390-ff5562748bdf?ixlib=rb-0.3.5&s=1b7f850b7f8f702e237b0f81c0ec0bf5&auto=format&fit=crop&w=700&q=80" />
+        <p>Trading</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+      
+      <div class="project">
+        <img class="project__image" src="https://images.unsplash.com/photo-1463620695885-8a91d87c53d0?ixlib=rb-0.3.5&s=e5bf2f64858b8abe2a386b0c6df594e4&auto=format&fit=crop&w=700&q=80" />
+        <p>Technology</p>
+        <div class="grid__overlay">
+          <button class="viewbutton">view more</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+ 
+  <script src="app.js"></script>
+</body>
 </html>
